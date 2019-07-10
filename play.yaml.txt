@@ -20,7 +20,7 @@
          These lines are added by blockinfile module
          Check out the marker lines
          backup: yes
-   - name: modify the line
+   - name: modify the line and registerthe system variable for recend step result
      lineinfile:
        path: /var/lib/jenkins/workspace/ansible-play0/play-lab/play.txt
        regexp: "LogLevel warn"
@@ -28,10 +28,12 @@
        state: present
        backup: yes
      register: result
-   - name: Display all variables/facts known for a host
+   - name: if any problem debug display theresult
      debug:
        var: result
        verbosity: 4 
-   - name: Display all variables/facts known for a host
-     debug: msg=" anil"
+   - name: usage of when
+     debug: 
+       var: result
+       msg: " HI MUDDALAPURAM"
      when: result != " "
