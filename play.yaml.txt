@@ -3,5 +3,5 @@
   tasks:
    - name: create a new directory
      file:
-       path: /home/ec2-user/playdirectory
+       path: /playdirectory
        state: directory
