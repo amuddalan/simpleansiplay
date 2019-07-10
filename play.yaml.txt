@@ -30,7 +30,7 @@
      register: file-edit
    - name: check the status of edit
      debug: 
-	   var: file-edit
+	 var: file-edit
    - name: debug msg print
      debug:  
 	   msg="hellow world"
