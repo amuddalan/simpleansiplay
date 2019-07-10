@@ -30,7 +30,7 @@
      register: file_edit
    - name: Display all variables/facts known for a host
      debug:
-       var: file-edit
+       var: file_edit
        verbosity: 4
    - name: debug msg print  
      debug: msg="file is successfully edited" 
