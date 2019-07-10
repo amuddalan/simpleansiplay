@@ -1,7 +1,6 @@
 ---
 - hosts: redhat
   become: true
-  become_user: sudo
   tasks:
    - name: create a new directory
      file:
