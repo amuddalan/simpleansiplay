@@ -16,4 +16,15 @@
        block: |
          These lines are added by blockinfile module
          Check out the marker lines
-       backup: yes
+         LogLevel warn
+         These lines are added by blockinfile module
+         Check out the marker lines
+         backup: yes
+      lineinfile:
+        path: /etc/httpd/conf/httpd.conf
+        # The String to Search
+        regexp: "LogLevel warn" 
+        # The String to Replace
+        line: "LogLevel MUDDALAPRAM ANILKUMAR"
+        state: present
+        backup: yes
