@@ -29,6 +29,8 @@
        backup: yes
 	   register: file-edit
    - name: check the status of edit
-     debug: file-edit
+     debug: 
+	   var: file-edit
    - name: debug msg print
-     debug: msg="hellow world"
+     debug:  
+	   msg="hellow world"
