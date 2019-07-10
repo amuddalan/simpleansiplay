@@ -28,7 +28,9 @@
        state: present
        backup: yes
      register: file-edit
-   - name: check the status of edit
-     debug: var: file-edit 
+   - name: Display all variables/facts known for a host
+     debug:
+       var: file-edit
+       verbosity: 4
    - name: debug msg print
      debug: msg="hellow world" 
