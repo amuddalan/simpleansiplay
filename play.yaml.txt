@@ -32,8 +32,4 @@
    - name: Display all variables/facts known for a host
      debug:
        var: result
-       verbosity: 4
-   - name: debug msg print
-     debug:
-       msg: "file is successfully edited"
-	 
+       verbosity: 4 
