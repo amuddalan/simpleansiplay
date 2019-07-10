@@ -1,7 +1,5 @@
 ---
 - hosts: redhat
-  become: yes
-  become_user: root
   tasks:
    - name: create a new directory
      file:
