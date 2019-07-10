@@ -4,5 +4,5 @@
   tasks:
    - name: create a new directory
      file:
-       path: /playdirectory
+       path: /playlab
        state: directory
