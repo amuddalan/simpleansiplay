@@ -32,3 +32,6 @@
      debug:
        var: result
        verbosity: 4 
+   - name: Display all variables/facts known for a host
+     debug: msg=" anil"
+     when: result != " "
