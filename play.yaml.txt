@@ -34,5 +34,5 @@
        verbosity: 4
    - name: debug msg print  
      debug: msg="file is successfully edited" 
-     when: {{file-edit.stderr}} == " "
+     when: file-edit == "09""
 	 
