@@ -4,9 +4,9 @@
   tasks:
    - name: create a new directory
      file:
-       path: /playlab
+       path: /var/lib/jenkins/workspace/ansible-play0/play-lab
        state: directory
    - name: create a new file
      file:
-       path: /playlab/hosts
-       state: touch
+       path: /var/lib/jenkins/workspace/ansible-play0/play-lab/play.txt
+       state: touch	
