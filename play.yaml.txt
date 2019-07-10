@@ -6,3 +6,7 @@
      file:
        path: /playlab
        state: directory
+   - name: create a new file
+     file:
+       path: /playlab/hosts
+       state: touch
