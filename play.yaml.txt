@@ -28,7 +28,7 @@
        state: present
        backup: yes
      register: result
-   - name: copy thefile
+   - name: copy thefile playbackup
      copy:
        src: /var/lib/jenkins/workspace/ansible-play0/play-lab/play.txt
        dest: /var/lib/jenkins/workspace/ansible-play0/play-lab/playcopy.txt
