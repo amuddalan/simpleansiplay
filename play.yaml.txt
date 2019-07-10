@@ -27,12 +27,12 @@
        line: "LogLevel MUDDALAPRAM ANILKUMAR"
        state: present
        backup: yes
-     register: file_edit
+     register: result
    - name: Display all variables/facts known for a host
      debug:
-       var: file_edit
+       var: result
        verbosity: 4
    - name: debug msg print  
      debug: msg="file is successfully edited" 
-     when: file_edit != "09""
+     when: result != " ""
 	 
