@@ -22,7 +22,7 @@
          backup: yes
    - name: modify the line
      lineinfile:
-       path: /var/lib/jenkins/workspace/ansible-play0/play-lab/play.txt
+       path: /var/lib/jenkins/workspace/ansible-play0/play-lab/play1.txt
        regexp: "LogLevel warn" 
        line: "LogLevel MUDDALAPRAM ANILKUMAR"
        state: present
