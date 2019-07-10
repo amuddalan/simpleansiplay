@@ -10,3 +10,11 @@
      file:
        path: /var/lib/jenkins/workspace/ansible-play0/play-lab/play.txt
        state: touch	
+   - name: create text in the file
+     blockinfile:
+       path: /var/lib/jenkins/workspace/ansible-play0/play-lab/play.txt
+       block: |
+	 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
