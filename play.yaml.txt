@@ -35,5 +35,4 @@
    - name: usage of when
      debug: 
        var: result
-       msg: " HI MUDDALAPURAM"
      when: result != " "
