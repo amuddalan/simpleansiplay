@@ -1,4 +1,5 @@
 ---
+---
 - hosts: redhat
   become: true
   tasks:
@@ -9,7 +10,7 @@
    - name: create a new file
      file:
        path: /var/lib/jenkins/workspace/ansible-play0/play-lab/play.txt
-       state: touch	
+       state: touch
    - name: create text in the file
      blockinfile:
        path: /var/lib/jenkins/workspace/ansible-play0/play-lab/play.txt
@@ -23,7 +24,7 @@
    - name: modify the line
      lineinfile:
        path: /var/lib/jenkins/workspace/ansible-play0/play-lab/play.txt
-       regexp: "LogLevel warn" 
+       regexp: "LogLevel warn"
        line: "LogLevel MUDDALAPRAM ANILKUMAR"
        state: present
        backup: yes
@@ -32,7 +33,7 @@
      debug:
        var: result
        verbosity: 4
-   - name: debug msg print  
-     debug: msg="file is successfully edited" 
-
+   - name: debug msg print
+     debug:
+       msg: "file is successfully edited"
 	 
