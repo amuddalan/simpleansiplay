@@ -3,8 +3,5 @@
   tasks:
    - name: create a new directory
      file:
-       path: /root/playdirectory
+       path: /home/ec2-user/playdirectory
        state: directory
-       owner: root
-       group: root
-       mode: 0755
