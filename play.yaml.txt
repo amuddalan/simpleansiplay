@@ -1,5 +1,4 @@
 ---
----
 - hosts: redhat
   become: true
   tasks:
