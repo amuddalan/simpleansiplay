@@ -27,7 +27,7 @@
        line: "LogLevel MUDDALAPRAM ANILKUMAR"
        state: present
        backup: yes
-	   register: file-edit
+     register: file-edit
    - name: check the status of edit
      debug: 
 	   var: file-edit
