@@ -14,7 +14,6 @@
      blockinfile:
        path: /var/lib/jenkins/workspace/ansible-play0/play-lab/play.txt
        block: |
-	 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-	 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-	 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-	 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+         These lines are added by blockinfile module
+         Check out the marker lines
+       backup: yes
