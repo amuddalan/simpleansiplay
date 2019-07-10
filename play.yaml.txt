@@ -20,9 +20,9 @@
          These lines are added by blockinfile module
          Check out the marker lines
          backup: yes
-      lineinfile:
-        path: /var/lib/jenkins/workspace/ansible-play0/play-lab/play.txt
-        regexp: "LogLevel warn" 
-        line: "LogLevel MUDDALAPRAM ANILKUMAR"
-        state: present
-        backup: yes
+     lineinfile:
+       path: /var/lib/jenkins/workspace/ansible-play0/play-lab/play.txt
+       regexp: "LogLevel warn" 
+       line: "LogLevel MUDDALAPRAM ANILKUMAR"
+       state: present
+       backup: yes
