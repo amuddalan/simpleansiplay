@@ -4,15 +4,15 @@
   tasks:
    - name: create a new directory
      file:
-       path: /var/lib/jenkins/workspace/ansible-play0/play-lab
+       path: /var/lib/jenkins/workspace/simpleansiplay/play-lab
        state: directory
    - name: create a new file
      file:
-       path: /var/lib/jenkins/workspace/ansible-play0/play-lab/play.txt
+       path: /var/lib/jenkins/workspace/simpleansiplay/play-lab/play.txt
        state: touch
    - name: create text in the file
      blockinfile:
-       path: /var/lib/jenkins/workspace/ansible-play0/play-lab/play.txt
+       path: /var/lib/jenkins/workspace/simpleansiplay/play-lab/play.txt
        block: |
          These lines are added by blockinfile module
          Check out the marker lines
@@ -22,7 +22,7 @@
          backup: yes
    - name: modify the line and registerthe system variable for recend step result
      lineinfile:
-       path: /var/lib/jenkins/workspace/ansible-play0/play-lab/play.txt
+       path: /var/lib/jenkins/workspace/simpleansiplay/play-lab/play.txt
        regexp: "LogLevel warn"
        line: "LogLevel MUDDALAPRAM ANILKUMAR"
        state: present
@@ -30,8 +30,8 @@
      register: result
    - name: copy thefile playbackup1aaaaa
      copy:
-       src: /var/lib/jenkins/workspace/ansible-play0/play-lab/play.txt
-       dest: /var/lib/jenkins/workspace/ansible-play0/play-lab/playcopy.txt
+       src: /var/lib/jenkins/workspace/simpleansiplay/play-lab/play.txt
+       dest: /var/lib/jenkins/workspace/simpleansiplay/play-lab/playcopy.txt
    - name: if any problem debug display theresult
      debug:
        var: result
